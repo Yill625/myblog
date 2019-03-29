@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('uploader', function ($app) {
             $config = config('filesystems.default', 'public');
 
-            if ($config == 'upyun') {
+            if ($config == 'upyun' or $config == 'oss') {
                 return new UpyunManager();
             }
 

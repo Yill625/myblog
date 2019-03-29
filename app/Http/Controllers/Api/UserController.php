@@ -121,7 +121,7 @@ class UserController extends ApiController
         $currentImage = $request->get('image');
         $data = $request->get('data');
 
-        if (config('filesystems.default') === 'upyun'){
+        if (config('filesystems.default') == 'upyun' or config('filesystems.default') == 'oss'){
             auth()->user()->update(['avatar' => $currentImage['url']]);
             return $this->response->json($currentImage);
         }
