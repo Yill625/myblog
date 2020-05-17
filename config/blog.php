@@ -40,7 +40,7 @@ return [
     // Article Page
     'article' => [
         'title'       => 'Nothing is impossible.',
-        'description' => 'https://liangliang.work',
+        'description' => 'Learning was, is and will be important to all, old or young, rich or poor.',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',
